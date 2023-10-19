@@ -33,6 +33,10 @@ h2.h2 {
   font-size: 32px;
 }
 
+h3.h3 {
+  font-family: "wakanda-fanther";
+}
+
 #body #main p {
   font-family: "cantarell";
   font-size: 16px;
@@ -137,6 +141,30 @@ section {
   width: 500px;
   display: block;
   margin: 0 auto;
+}
+#main section.histoire .colonne-gauche {
+  width: 45%;
+}
+#main section.histoire .colonne-gauche .video iframe {
+  display: block;
+  margin: 0 auto;
+}
+#main section.histoire .colonne-droite {
+  width: 45%;
+}
+#main section.sky-view {
+  height: 1130px;
+  background-image: url("../img/wakanda/Pantherwakanda1.png");
+}
+#main section.sky-view .presentation-royaume {
+  width: 50%;
+  margin: 400px 0px 300px 150px;
+}
+#main section.sky-view .presentation-royaume h2.h2 {
+  font-size: 48px;
+}
+#main section.sky-view .presentation-royaume p {
+  width: 60%;
 }
 #main #contact {
   background-image: url("../img/home/Pantherhome7.png");
