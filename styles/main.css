@@ -1,5 +1,225 @@
-body {
-  background-color: black;
+@charset "UTF-8";
+/*****Importation des polices de carcatères****/
+@font-face {
+  font-family: "panthera";
+  src: url("fonts/panthera/panthera.otf");
+}
+@font-face {
+  font-family: "beyno";
+  src: url("fonts/beyno/BEYNO.otf");
+}
+@font-face {
+  font-family: "wakanda-fanther";
+  src: url("fonts/wakanda-fanther/WakandaFanther-JRpp7.ttf");
+}
+@font-face {
+  font-family: "cantarell";
+  src: url("fonts/Cantarell/Cantarell-Regular.ttf");
+}
+#body {
+  background-image: url("../img/logos/arrière_plan.png");
+  color: white;
+}
+
+/**********Règles générales*********/
+h1#h1 {
+  font-family: "panthera";
+  margin-top: 120px;
+  font-size: 68px;
+}
+
+h2.h2 {
+  font-family: "beyno";
+  font-size: 32px;
+}
+
+#body #main p {
+  font-family: "cantarell";
+  font-size: 16px;
+  text-align: justify;
+}
+
+section {
+  padding: 10px;
+}
+
+/********Le header********/
+#header {
+  font-family: "beyno";
+  border: 1px solid white;
+  margin: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+#header .logos {
+  margin: 5px;
+}
+#header .nav-tab {
+  margin: 5px;
+  padding: 0;
+  color: white;
+}
+#header .nav-tab .nav-item {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+}
+#header .nav-tab .nav-item a {
+  display: block;
+  padding: 3px;
+}
+
+#main * {
+  border: 1px solid white;
+}
+#main section.affiche {
+  display: flex;
+}
+#main section.affiche .description {
+  margin-left: auto;
+  width: 600px;
+}
+#main section.affiche figure {
+  width: 800px;
+  margin-right: auto;
+}
+#main section.affiche figure img {
+  width: 100%;
+}
+#main section.personnage-sliders {
+  display: flex;
+}
+#main section.personnage-sliders figure {
+  margin: 0 auto;
+  height: 400px;
+  display: flex;
+}
+#main section.personnage-sliders figure img {
+  height: 400px;
+}
+#main section.personnage-sliders figure legend {
+  width: 250px;
+  padding: 10px;
+}
+#main section.histoire {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+#main section.histoire .texte {
+  width: 55%;
+}
+#main section.histoire .illustrations {
+  width: 40%;
+}
+#main section.histoire .illustrations .card {
+  line-height: 2;
+  position: relative;
+  margin: 200px auto;
+  height: 700px;
+}
+#main section.histoire .illustrations .card .card-img-top {
+  width: 300px;
+  position: absolute;
+  top: -200px;
+  left: 50px;
+}
+#main section.histoire .illustrations .card .card-body {
+  margin-top: 200px;
+}
+#main section.histoire .illustrations .card .card-text, #main section.histoire .illustrations .card h4 {
+  color: black;
+}
+#main section.histoire .illustrations .card h4 {
+  text-align: center;
+}
+#main section.histoire .illustrations img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+#main #contact {
+  background-image: url("../img/home/Pantherhome7.png");
+}
+#main #contact p, #main #contact legend {
+  text-align: center !important;
+}
+#main #contact .formulaire-contact {
+  color: black;
+  border: 1px solid red;
+  width: 800px;
+  margin: 250px auto;
+  padding: 40px 100px 100px 100px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#main #contact .formulaire-contact form input, #main #contact .formulaire-contact form textarea {
+  display: block;
+  margin: 10px auto 5px auto;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+}
+#main #contact .formulaire-contact form #message {
+  height: 150px;
+}
+#main #contact .formulaire-contact form .validation {
+  background-color: white;
+  width: 150px;
+}
+
+#footer {
+  margin: 150px 40px;
+}
+#footer .footer-links {
+  margin-left: 150px;
+  display: flex;
+}
+#footer .footer-links .marvel {
+  position: relative;
+}
+#footer .footer-links .marvel .support {
+  width: 250px;
+}
+#footer .footer-links .marvel .logos {
+  position: absolute;
+  top: 128px;
+  left: 55px;
+}
+#footer .footer-links .right {
+  width: 80%;
+}
+#footer .footer-links .right .pages-reseaux {
+  display: flex;
+  height: 250px;
+  padding: 20px;
+}
+#footer .footer-links .right .pages-reseaux .pages {
+  width: 40%;
+  padding: 20px;
+}
+#footer .footer-links .right .pages-reseaux .pages > * {
+  line-height: 2;
+}
+#footer .footer-links .right .pages-reseaux .reseaux {
+  width: 60%;
+  padding: 20px;
+}
+#footer .footer-links .right .pages-reseaux .reseaux .network > * {
+  margin-right: 20px;
+}
+#footer .footer-links .right .droits {
+  padding-left: 0;
+}
+#footer .footer-links .right .droits li {
+  display: inline-block;
+  margin-left: 10px;
+  color: white;
+}
+#footer .footer-title {
+  text-transform: uppercase;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
